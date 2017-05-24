@@ -1,0 +1,159 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: black;
+        margin: 0px;
+    }
+    
+    .wrapper {
+        font-family: sans-serif;
+        max-width: 900px;
+        margin: auto;
+        position: relative;
+    }
+    
+    .menu {
+        background-color: black;
+        position: fixed;
+        width: 100vw;
+        max-width: 900px;
+        min-height: 75px;
+        z-index: 2;
+    }
+    
+    .menu-container {
+        max-width: 100vw;
+        position: relative;
+        height: 75px;
+    }
+    
+    .logo {
+        position: fixed;
+        background-image: url("./logo2.jpg");
+        background-size: cover;
+        margin-left: 20px;
+        height: 150px;
+        width: 150px;
+        top: 0px;
+        bottom: 0px;
+        border-radius: 15%;
+    }
+    
+    nav {
+        color: white;
+        margin: 20px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    
+    .photo {
+        padding-top: 50px;
+        background-image: url("./photo.jpg");
+        height: 80%;
+        width: 100%;
+    }
+    
+    .box {
+        float: left;
+        width: 33.33%;
+        height: 33.33%;
+    }
+    
+    .box > div {
+        color: #DDD;
+        margin: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        height: 90%;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+    }
+    
+    .box .product {
+        margin: 10px;
+    }
+    
+    nav i.fa {
+        margin: 20px 20px 0px 0px;
+        font-size: 1.6em;
+    }
+    
+    .row:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    
+    footer {
+        height: 100px;
+        width: 100%;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+<html>
+
+
+<head>
+    <title>Oficina das Velas</title>
+    <!--<script>setTimeout(x => { location.reload();} , 3000)</script>-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <div class="menu-container">
+                <div class="logo"></div>
+                <nav>
+                    <div>
+                        <a href="https://www.facebook.com/oficinadasvelas/" title="Fale conosco no Facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/oficinadasvelas/" title="Veja nossos eventos no Instagram">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="photo"></div>
+        <div class="row">
+            <div class="box">
+                <div>
+                    <div class="product">Cachepos</div>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <div class="product">Velas</div>
+                </div>
+            </div>
+            <div class="box">
+                <div>
+                    <div class="product">Pontos de luz</div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
